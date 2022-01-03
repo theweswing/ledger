@@ -8,13 +8,17 @@
 
 #USERNAME SIGNUP CHECK:
 
-# {"username": "theweswing",
-# "password": "sexywes2",
-# "password_confirmation": "sexywes2",
-# "email": "wschierenbeck@gmail.com",
-# "phone": "347-853-4383",
-# "first_name": "Wes",
-# "last_name": "Schierenbeck"}
+user1 = {
+  'username': 'theweswing',
+  'password': 'sexywes2',
+  'password_confirmation': 'sexywes2',
+  'email': 'wschierenbeck@gmail.com',
+  'phone': '347-853-4383',
+  'first_name': 'Wes',
+  'last_name': 'Schierenbeck',
+}
+
+User.create(user1)
 
 #LOGIN CHECK:
 # {"username": "theweswing",
