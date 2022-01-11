@@ -18,7 +18,21 @@ user1 = {
   'last_name': 'Schierenbeck',
 }
 
+user2 = {
+  'username': 'liam',
+  'password': 'sexywes2',
+  'password_confirmation': 'sexywes2',
+  'email': 'liam.h.obrien@gmail.com',
+  'phone': '646-abc-defg',
+  'first_name': 'Liam',
+  'last_name': 'OBrien',
+}
+
 User.create(user1)
+User.create(user2)
+
+cat1 = Category.create('name': 'Video Game')
+item1 = Item.create('name': 'Breath of the Wild', 'category_id': 1)
 
 #LOGIN CHECK:
 # {"username": "theweswing",

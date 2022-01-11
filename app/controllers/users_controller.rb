@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   rescue_from ActiveRecord::RecordInvalid, with: :invalid_input
-  skip_before_action :authorize, only: [:create]
+
+  # skip_before_action :authorize, only: [:create]
 
   def create
     user = User.create!(strong_params)
@@ -19,7 +20,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    users - User.all
+    users = User.all
     render json: users, status: :ok
   end
 
